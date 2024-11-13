@@ -44,7 +44,7 @@ with gr.Blocks() as demo:
     
     sliders = []
     for i, (index, label, string1, string2) in enumerate(pairs):
-        gr.Markdown(f"#### ペア {i+1} ({label})")
+        gr.Markdown(f"#### ペア {i+1}")
         gr.Markdown(f"**String 1:** {string1}")
         gr.Markdown(f"**String 2:** {string2}")
         slider = gr.Slider(0, 1, label=f"文字列ペア {i+1} の近さを評価", step=0.01)
