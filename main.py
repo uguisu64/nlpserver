@@ -57,4 +57,4 @@ with gr.Blocks() as demo:
     submit_button.click(evaluate_similarity, inputs=sliders, outputs=output)
 
 # Webアプリを実行
-demo.launch()
+demo.launch(share=True)
